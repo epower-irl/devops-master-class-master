@@ -19,7 +19,13 @@ pipeline {
   }
   post {
     always {
-      echo "Post block - always executed"
+      echo "Post/always block - executed always"
+	}
+    success {
+      echo "Post/success block - executed on success"
+	}
+    failure {
+      echo "Post/failure block - executed on failure"
 	}
   }
 }
