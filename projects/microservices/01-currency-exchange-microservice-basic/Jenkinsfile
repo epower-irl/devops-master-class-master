@@ -10,7 +10,7 @@ pipeline {
 	stage('Build') {
 	  steps {
 		//sh 'docker version'
-		bash 'mvn -version' 
+		sh 'mvn -version' 
 		echo "Build"
 	  }
 	}
